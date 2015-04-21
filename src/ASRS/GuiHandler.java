@@ -60,7 +60,8 @@ import org.w3c.dom.NodeList;
 	                    //System.out.println(artikelnr.getLength());
 	                    
 	                    for(int i = 0; i < artikelnr.getLength(); i++){
-	                    System.out.println("Artikelnummer : " + doc.getElementsByTagName("artikelnr").item(i).getTextContent());
+                            int iplus1 = i + 1;
+	                    System.out.println("Artikelnummer " + iplus1 + ": " + doc.getElementsByTagName("artikelnr").item(i).getTextContent());
 	                    }
 	                    
 	                    
