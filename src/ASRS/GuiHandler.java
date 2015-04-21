@@ -23,19 +23,10 @@ public class GuiHandler extends JFrame {
         this.jfc.setFileSelectionMode(JFileChooser.FILES_ONLY);
         this.jfc.setFileFilter(new FileNameExtensionFilter("XML files (*.xml)", "xml"));
 
-	        //final JButton button = new JButton("Open XML file");
-        //button.addActionListener(new ActionListener() {
-        // @Override
-        //public void actionPerformed(ActionEvent e) {
-        xmlFilesBrowserActionPerformed();
-	            //}
-        //});
-        //add(button);
-
-	       // pack();
+        xmlFileUitlezen();
     }
 
-    protected void xmlFilesBrowserActionPerformed() {
+    protected void xmlFileUitlezen() {
         final File xmlFile = getXmlFile();
         if (xmlFile != null) {
 
